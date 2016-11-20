@@ -14,12 +14,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        slider.value = 0
+        
         // Do any additional setup after loading the view, typically from a nib.
         self.title = "ProgressBar - Swift"
+        
+        // set progress bar background color
         self.navigationController?.backgroundColor = UIColor.white
+        
+        // set progress bar primary color
         self.navigationController?.primaryColor = UIColor.blue
+        
+        // show progress bar
         self.navigationController?.isShowingProgressBar = true
-        slider.value = 0
+        
+        // update progress bar with given value
         self.navigationController?.setProgress(slider.value, animated: false)
     }
 
