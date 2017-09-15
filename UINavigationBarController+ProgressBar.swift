@@ -11,7 +11,8 @@ import UIKit
 
 import ObjectiveC
 
-//Keys to set properties since one cannot define properties in a category.
+//Keys to set properties since we cannot define properties in a category.
+
 var displayLinkKey: UInt8 = 0
 var animationFromKey: UInt8 = 0
 var animationToKey: UInt8 = 0

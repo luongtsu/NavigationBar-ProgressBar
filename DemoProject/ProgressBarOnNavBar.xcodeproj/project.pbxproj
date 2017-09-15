@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96A46AB61F6C0B5D00CCA6C0 /* UINavigationBarController+ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A46AB51F6C0B5D00CCA6C0 /* UINavigationBarController+ProgressBar.swift */; };
 		96A953541DDF5CBC00CF1E7A /* ProgressBarOnNavBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A953531DDF5CBC00CF1E7A /* ProgressBarOnNavBarTests.swift */; };
 		96A9535F1DDF5CBC00CF1E7A /* ProgressBarOnNavBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A9535E1DDF5CBC00CF1E7A /* ProgressBarOnNavBarUITests.swift */; };
 		96A953831DE1A4A500CF1E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A953771DE1A4A500CF1E7A /* AppDelegate.swift */; };
 		96A953841DE1A4A500CF1E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A953781DE1A4A500CF1E7A /* Assets.xcassets */; };
 		96A953851DE1A4A500CF1E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A953791DE1A4A500CF1E7A /* LaunchScreen.storyboard */; };
 		96A953861DE1A4A500CF1E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A9537B1DE1A4A500CF1E7A /* Main.storyboard */; };
-		96A953871DE1A4A500CF1E7A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96A9537D1DE1A4A500CF1E7A /* Info.plist */; };
-		96A953881DE1A4A500CF1E7A /* UINavigationBarController+ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A9537F1DE1A4A500CF1E7A /* UINavigationBarController+ProgressBar.swift */; };
 		96A953891DE1A4A500CF1E7A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A953811DE1A4A500CF1E7A /* DetailViewController.swift */; };
 		96A9538A1DE1A4A500CF1E7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A953821DE1A4A500CF1E7A /* ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		96A46AB51F6C0B5D00CCA6C0 /* UINavigationBarController+ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationBarController+ProgressBar.swift"; path = "../../UINavigationBarController+ProgressBar.swift"; sourceTree = "<group>"; };
 		96A9533B1DDF5CBC00CF1E7A /* ProgressBarOnNavBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressBarOnNavBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A9534F1DDF5CBC00CF1E7A /* ProgressBarOnNavBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressBarOnNavBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A953531DDF5CBC00CF1E7A /* ProgressBarOnNavBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarOnNavBarTests.swift; sourceTree = "<group>"; };
@@ -49,7 +49,6 @@
 		96A9537A1DE1A4A500CF1E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96A9537C1DE1A4A500CF1E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96A9537D1DE1A4A500CF1E7A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96A9537F1DE1A4A500CF1E7A /* UINavigationBarController+ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBarController+ProgressBar.swift"; sourceTree = "<group>"; };
 		96A953811DE1A4A500CF1E7A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		96A953821DE1A4A500CF1E7A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96A46AB41F6C0B4B00CCA6C0 /* Cetagories */ = {
+			isa = PBXGroup;
+			children = (
+				96A46AB51F6C0B5D00CCA6C0 /* UINavigationBarController+ProgressBar.swift */,
+			);
+			name = Cetagories;
+			sourceTree = "<group>";
+		};
 		96A953321DDF5CBC00CF1E7A = {
 			isa = PBXGroup;
 			children = (
@@ -102,8 +109,8 @@
 		96A9533D1DDF5CBC00CF1E7A /* ProgressBarOnNavBar */ = {
 			isa = PBXGroup;
 			children = (
+				96A46AB41F6C0B4B00CCA6C0 /* Cetagories */,
 				96A953761DE1A4A500CF1E7A /* Applications */,
-				96A9537E1DE1A4A500CF1E7A /* Categories */,
 				96A953801DE1A4A500CF1E7A /* Classes */,
 			);
 			path = ProgressBarOnNavBar;
@@ -137,14 +144,6 @@
 				96A9537D1DE1A4A500CF1E7A /* Info.plist */,
 			);
 			path = Applications;
-			sourceTree = "<group>";
-		};
-		96A9537E1DE1A4A500CF1E7A /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				96A9537F1DE1A4A500CF1E7A /* UINavigationBarController+ProgressBar.swift */,
-			);
-			path = Categories;
 			sourceTree = "<group>";
 		};
 		96A953801DE1A4A500CF1E7A /* Classes */ = {
@@ -219,7 +218,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Luong Minh Hiep";
 				TargetAttributes = {
 					96A9533A1DDF5CBC00CF1E7A = {
@@ -266,7 +265,6 @@
 				96A953841DE1A4A500CF1E7A /* Assets.xcassets in Resources */,
 				96A953861DE1A4A500CF1E7A /* Main.storyboard in Resources */,
 				96A953851DE1A4A500CF1E7A /* LaunchScreen.storyboard in Resources */,
-				96A953871DE1A4A500CF1E7A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +290,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A953831DE1A4A500CF1E7A /* AppDelegate.swift in Sources */,
-				96A953881DE1A4A500CF1E7A /* UINavigationBarController+ProgressBar.swift in Sources */,
 				96A9538A1DE1A4A500CF1E7A /* ViewController.swift in Sources */,
+				96A46AB61F6C0B5D00CCA6C0 /* UINavigationBarController+ProgressBar.swift in Sources */,
 				96A953891DE1A4A500CF1E7A /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +365,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -417,6 +416,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -539,6 +539,7 @@
 				96A953651DDF5CBC00CF1E7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96A953661DDF5CBC00CF1E7A /* Build configuration list for PBXNativeTarget "ProgressBarOnNavBarTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +548,7 @@
 				96A953681DDF5CBC00CF1E7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96A953691DDF5CBC00CF1E7A /* Build configuration list for PBXNativeTarget "ProgressBarOnNavBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +557,7 @@
 				96A9536B1DDF5CBC00CF1E7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
