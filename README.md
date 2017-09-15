@@ -5,7 +5,7 @@ Allow to update progress bar easily.
 
 Preview
 ---------
-![Screenshot]<img src="https://github.com/luongtsu/NavigationBar-ProgressBar/blob/master/Images/lmh_progressBar.gif">
+![Screenshot](https://github.com/luongtsu/NavigationBar-ProgressBar/blob/master/Images/lmh_progressBar.gif)
 
 Installation
 ---------
