@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         self .showAnimation()
     }
     
-    func showAnimation() {
+    @objc func showAnimation() {
         slider.value =  min(slider.value + 0.1, 1.0)
         self.navigationController?.setProgress(slider.value, animated: true)
         if slider.value < 1.0 {
@@ -68,11 +68,10 @@ class ViewController: UIViewController {
         }
     }
     
-    func finishAnimation() {
+    @objc func finishAnimation() {
         slider.isEnabled = true
         slider.value = 0
         self.navigationController?.setProgress(slider.value, animated: false)
         self.navigationController?.isShowingProgressBar = false
     }
 }
-

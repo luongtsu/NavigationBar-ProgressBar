@@ -174,13 +174,13 @@ extension UINavigationController {
                 displayLink?.invalidate()
                 displayLink = CADisplayLink.init(target: self, selector: #selector(animateProgress(displayLink:)))
                 self.displayLink = displayLink
-                displayLink?.add(to: .main, forMode: .commonModes)
+                displayLink?.add(to: .main, forMode: RunLoop.Mode.common)
                 
             }
         }
     }
     
-    func animateProgress( displayLink: CADisplayLink) {
+    @objc func animateProgress( displayLink: CADisplayLink) {
         DispatchQueue.main.async {
             let dt = Double(Double(displayLink.timestamp) - self.animationStartTime)/Double(self.animationDuration)
             if dt >= 1.0 {
@@ -308,7 +308,7 @@ extension UINavigationController {
         var height = 0.0
         
         // Calculate the screen's width
-        if UIInterfaceOrientationIsLandscape(interfaceOrientation) {
+        if interfaceOrientation.isLandscape {
             // Use the maximum value
             width = Double(max(screenSize.width, screenSize.height))
             if UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone {
