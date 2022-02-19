@@ -78,12 +78,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		96A46AB41F6C0B4B00CCA6C0 /* Cetagories */ = {
+		96A46AB41F6C0B4B00CCA6C0 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
 				96A46AB51F6C0B5D00CCA6C0 /* UINavigationBarController+ProgressBar.swift */,
 			);
-			name = Cetagories;
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		96A953321DDF5CBC00CF1E7A = {
@@ -109,7 +109,7 @@
 		96A9533D1DDF5CBC00CF1E7A /* ProgressBarOnNavBar */ = {
 			isa = PBXGroup;
 			children = (
-				96A46AB41F6C0B4B00CCA6C0 /* Cetagories */,
+				96A46AB41F6C0B4B00CCA6C0 /* Categories */,
 				96A953761DE1A4A500CF1E7A /* Applications */,
 				96A953801DE1A4A500CF1E7A /* Classes */,
 			);
@@ -242,6 +242,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -450,7 +451,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lmh.ProgressBarOnNavBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -462,7 +463,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lmh.ProgressBarOnNavBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -475,7 +476,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lmh.ProgressBarOnNavBarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProgressBarOnNavBar.app/ProgressBarOnNavBar";
 			};
 			name = Debug;
@@ -489,7 +490,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lmh.ProgressBarOnNavBarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProgressBarOnNavBar.app/ProgressBarOnNavBar";
 			};
 			name = Release;
@@ -502,7 +503,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lmh.ProgressBarOnNavBarUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = ProgressBarOnNavBar;
 			};
 			name = Debug;
@@ -515,7 +516,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lmh.ProgressBarOnNavBarUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = ProgressBarOnNavBar;
 			};
 			name = Release;
