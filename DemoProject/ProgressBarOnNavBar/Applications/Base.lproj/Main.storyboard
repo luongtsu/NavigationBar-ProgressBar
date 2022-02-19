@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="f0F-b3-zrK">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="f0F-b3-zrK">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,6 +14,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gCU-5J-Kfy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FfY-HO-8I7"/>
@@ -38,33 +37,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mhk-Ii-0qV">
-                                <rect key="frame" x="35" y="219" width="304" height="31"/>
+                                <rect key="frame" x="34" y="199" width="307" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0bu-Vh-9cf"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="gTj-Cj-w5H"/>
-                                    <constraint firstAttribute="width" constant="300" id="snI-8K-94y"/>
                                 </constraints>
                                 <connections>
                                     <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="F6d-qi-1nz"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gB-iv-azc">
-                                <rect key="frame" x="115" y="114" width="145" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="145" id="T94-Il-rXO"/>
-                                    <constraint firstAttribute="height" constant="30" id="cy7-hY-up3"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gB-iv-azc">
+                                <rect key="frame" x="129.5" y="94" width="116" height="30"/>
                                 <state key="normal" title="Show Detail view"/>
                                 <connections>
                                     <action selector="showDetailView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N62-Vv-JOs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoG-qN-dsV">
-                                <rect key="frame" x="120" y="164" width="135" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="135" id="Syt-s7-SgJ"/>
-                                    <constraint firstAttribute="height" constant="30" id="pgx-gI-oZL"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoG-qN-dsV">
+                                <rect key="frame" x="133" y="144" width="109" height="30"/>
                                 <state key="normal" title="Show animation"/>
                                 <connections>
                                     <action selector="showAnimationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DQJ-cd-SfH"/>
@@ -73,12 +62,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mhk-Ii-0qV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5J4-rz-rsZ"/>
-                            <constraint firstItem="mhk-Ii-0qV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="7JS-bm-LiQ"/>
                             <constraint firstItem="PoG-qN-dsV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="85o-6G-m5T"/>
                             <constraint firstItem="mhk-Ii-0qV" firstAttribute="top" secondItem="PoG-qN-dsV" secondAttribute="bottom" constant="25" id="LGL-b4-ari"/>
+                            <constraint firstItem="mhk-Ii-0qV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Mc4-Zh-DLX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mhk-Ii-0qV" secondAttribute="trailing" constant="20" id="POa-oc-RNk"/>
                             <constraint firstItem="6gB-iv-azc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="kRU-Wn-xem"/>
-                            <constraint firstItem="mhk-Ii-0qV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nQu-Yh-6rR"/>
                             <constraint firstItem="6gB-iv-azc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sA7-bR-WYZ"/>
                             <constraint firstItem="PoG-qN-dsV" firstAttribute="top" secondItem="6gB-iv-azc" secondAttribute="bottom" constant="20" id="whK-lw-0dL"/>
                         </constraints>
@@ -93,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="-130.40000000000001" y="-218.1409295352324"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="80o-P0-eeZ">
             <objects>
-                <viewController id="Noc-RV-blz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="Noc-RV-blz" customClass="DetailViewController" customModule="ProgressBarOnNavBar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S7o-oz-hpP"/>
                         <viewControllerLayoutGuide type="bottom" id="M5R-rg-NoD"/>

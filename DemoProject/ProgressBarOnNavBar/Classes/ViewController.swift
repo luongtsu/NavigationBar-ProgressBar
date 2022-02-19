@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         self.title = "ProgressBar - Swift"
         
         // set progress bar background color
-        self.navigationController?.backgroundColor = UIColor.white
+        self.navigationController?.backgroundColor = UIColor.clear
         
         // set progress bar primary color
         self.navigationController?.primaryColor = UIColor.blue
@@ -46,9 +46,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var showDetail: UIButton!
     @IBAction func showDetailView(_ sender: Any) {
-        let detailView = DetailViewController()
+        let detailView = storyboard?.instantiateViewController(withIdentifier: "DetailViewController")
         //let nav = UINavigationController(rootViewController: detailView)
-        self.navigationController?.pushViewController(detailView, animated: true)
+        self.navigationController?.pushViewController(detailView!, animated: true)
         //self.navigationController?.present(nav, animated: true, completion: nil)
     }
     
